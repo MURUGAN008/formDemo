@@ -1,0 +1,99 @@
+nav{
+		border: 1px solid black;
+		background-color: ;
+}
+nav ul{
+	list-style: none;
+	display: flex;
+	width: 30px;
+	margin-left: 100px;
+}
+nav ul li img{
+	/*border: 1px solid red;*/
+	width: 40px;
+	height: 40px;
+	mix-blend-mode: multiply;
+}
+.container{
+	border: 1px solid gray;
+	width: 400px;
+	margin-top: 80px;
+	margin-left: 400px;
+	background-color: rgba(255, 255, 255, 0.226);
+	backdrop-filter: blur(5px);
+}
+.container h1{
+	margin-left: 150px;
+	color: white;
+	font-weight: bold;
+}
+.container input{
+	background-color: rgba(255, 255, 255, 0.266);
+	backdrop-filter: blur(5px);
+	border-radius: 15px;
+	font-weight: bold;
+	padding-left: 20px;
+	height: 25px;
+}
+.container #pwd{
+	margin-left: 9px;
+}
+.container .content{
+	/*border: 1px solid red;
+*/	margin: 40px 20px;
+	height: 300px;
+	line-height: 80px;
+	padding-left: 20px;
+}
+.container .content #submit{
+	letter-spacing: 3px;
+	margin-left: 120px;
+	padding-left: 10px;
+	width: 80px;
+	height: 30px;
+	box-shadow: rgb(0, 19, 77) 0px 7px 29px 0px;
+	border-radius: 13px;
+	background-color: rgb(51, 102, 255);
+/*	opacity: 0.9;*/
+}
+.container .content #submit:hover{
+	letter-spacing: 4px;
+}
+.container .content #submit:active{
+	margin-left: 115px;
+	width: 90px;
+	height: 35px;
+	transform: translateY(10px);
+}
+.container .content #link-signup{
+	margin-left: 80px;
+}
+
+body{
+	background-color: springgreen;
+	/*background: linear-gradient(to left, springgreen, greenyellow);*/
+}
+
+}
+.logout input{
+	background-color: transparent;
+	border: 0px solid;
+}
+.logout a{
+	text-decoration: none;
+	border: 1px solid black;
+	background-color: steelblue;
+	border-radius: 7px;
+}
+#signup-submit{
+	margin-left: 140px;
+	padding-left: 10px;
+	box-shadow: rgb(0, 19, 77) 0px 7px 29px 0px;
+}
+#signup-submit:hover{
+	background-color: blue;
+	transition: all 1s linear;
+}
+#signup-submit:active{
+	transform: translateY(15px);
+}

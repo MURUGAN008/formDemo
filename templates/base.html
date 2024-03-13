@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>007_forms</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+{% include 'nav.html' %}
+{% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    {% if 'hello' in message.tags %}
+        <li class="{{ message.tags }}" >{{message}}</li>
+    {% endif %}
+    {% endfor %}
+</ul>
+{% endif %}
+{% block content %}
+{% endblock %}
+</body>
+</html>

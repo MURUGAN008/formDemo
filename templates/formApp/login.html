@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+<body id="body-login">
+{% block content %}
+<div class="container" id="login">
+	<h1>Log In</h1>
+	<form method="POST">{% csrf_token %}
+		<div class="content">
+	<label for="username">User Name: </label><input type="text" name="username" id="username"><br>
+	<label for="pwd">Password: </label><input type="password" name="pwd" id="pwd"><br>
+	<input type="submit" name="submit" value="login" id="submit">
+	</form>
+	<pre id="link-signup">Not signed up?<a href="{% url 'signup' %}">Sign Up</a></pre>
+	</div>
+</div>
+{% endblock %}
+</body>

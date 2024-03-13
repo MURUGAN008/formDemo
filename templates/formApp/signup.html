@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+<body>
+{% block content %}
+<div class="container">
+	<h1>Sign Up</h1>
+	<form method="POST">{% csrf_token %}
+		{{form.as_p}}
+<!-- 		<label for="name">Name: </label><input type="text" name="name" id="name"><br>
+		<label for="age">Age: </label><input type="number" name="age" id="age"><br>
+		<label for="ph.no">Phone Number: </label><input type="number" name="ph.no" id="ph.no"><br>
+		<label for="mail">Email: </label><input type="email" name="mail" id="mail"><br>
+		<label for="pwd">Password: </label><input type="password" name="pwd" id="pwd"><br>
+		<label for="c-pwd">Confirm Password: </label><input type="password" name="c-pwd" id="c-pwd"><br>-->
+		<input type="submit" name="submit" value="Sign Up" id="signup-submit">
+	</form>
+	<pre>Already Signed Up?<a href="{% url 'login' %}">Log In</a></pre>
+</div>
+{% endblock %}
+</body>
